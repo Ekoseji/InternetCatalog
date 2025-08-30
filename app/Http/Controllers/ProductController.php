@@ -10,12 +10,10 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::query()
-            ->with('tags')
-            ->paginate(20);
+        $products = Product::with('tags')->get();
 
         return Inertia::render('Home', [
-            'products' => $products
+            'products' => $products,
         ]);
     }
 

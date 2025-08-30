@@ -3,7 +3,6 @@
 import Main from "@/Layouts/Main.vue";
 import ProductCard from "@/components/ProductCard.vue";
 import SideBarFilters from "@/components/SideBarFilters.vue";
-import NavBar from "@/components/NavBar.vue";
 
 defineOptions({
     layout: Main
