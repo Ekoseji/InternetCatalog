@@ -10,12 +10,14 @@ class ProductController extends Controller
 {
     public function index()
     {
-        $products = Product::with('tags')->get();
+        // пагинация по 12 товаров на страницу
+        $products = Product::with('tags')->paginate(12);
 
         return Inertia::render('Home', [
             'products' => $products,
         ]);
     }
+
 
 
     public function create()

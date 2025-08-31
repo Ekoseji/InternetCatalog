@@ -12,7 +12,7 @@ class ProductSeeder extends Seeder
     public function run()
     {
         // Загружаем JSON
-        $json = file_get_contents(database_path('seeders/products.json'));
+        $json = file_get_contents(database_path('seeders/products2.json'));
         $data = json_decode($json, true);
 
         // Словарь прилагательных для заголовков
