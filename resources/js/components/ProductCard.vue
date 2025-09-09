@@ -9,7 +9,7 @@ const props = defineProps({
 <template>
     <article class="card">
         <Link href="">
-            <div class="content">
+            <div class="page">
 
                 <!-- Верхняя часть с картинкой -->
                 <div class="up">
@@ -46,7 +46,7 @@ const props = defineProps({
     flex-direction: column;
     border-radius: 0.5rem;
     width: 230px;
-    height: 440px;
+    height: 420px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -63,7 +63,7 @@ const props = defineProps({
     height: 100%;
 }
 
-.content {
+.page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
